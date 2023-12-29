@@ -1,0 +1,10 @@
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app # Muy potente, espara que cuando yo haga cambios aca se reflejen en el contenedor  
+    ports:
+      - '80:80' # Hago enlaces de los puertos con los de mi maquino y mi contenedor  
+      

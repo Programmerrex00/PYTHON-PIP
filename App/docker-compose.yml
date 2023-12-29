@@ -1,0 +1,8 @@
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app # Muy potente, espara que cuando yo haga cambios aca se reflejen en el contenedor  
+      
